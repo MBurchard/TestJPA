@@ -18,17 +18,17 @@ class BetaEntity(
 
   @CreatedDate
   @Column(nullable = false, updatable = false)
-  val created: Instant? = null,
+  var created: Instant? = null,
 
   @LastModifiedDate
-  val modified: Instant? = null,
+  var modified: Instant? = null,
 
   @Version
   @Column(nullable = false)
-  val vnr: Int = 0,
+  var vnr: Int = 0,
 
   @Column(nullable = false)
-  val content: String? = null,
+  var content: String?,
 ) {
 
   override fun toString(): String {

@@ -14,7 +14,7 @@ class AlphaEntity(
   val id: Long? = null,
 
   @Column(nullable = false)
-  val content: String? = null,
+  var content: String? = null,
 ) {
   override fun toString(): String {
     return "AlphaEntity(id=$id, content=$content)"
