@@ -1,0 +1,9 @@
+logging:
+  level:
+    de.mbur.test_jpa: debug
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
